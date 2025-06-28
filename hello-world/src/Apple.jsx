@@ -1,10 +1,7 @@
+import React from 'react';
 
-function App() {
-  return (
-    <div>
-      <h1>Hello from RaGHU React!</h1>
-    </div>
-  );
+function Apple() {
+  return <p>This is Apple.</p>;
 }
 
-export default App;
+export default Apple;
