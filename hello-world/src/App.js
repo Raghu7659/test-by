@@ -11,7 +11,7 @@ import StateManagement  from './propsContainer/StateMgm';
 import ClickEvent from './propsContainer/ClickEvent';
 import Resize from './propsContainer/Chat';
 import FormExample from './propsContainer/Formexample';
-
+import SampleArrayComponent from './propsContainer/Samplearray';
 let a ="Apple"
 let b = "Banana"
 const user ={
@@ -35,6 +35,7 @@ function App() {
       <ClickEvent />
       <Resize />
       <FormExample />
+      <SampleArrayComponent />
     </div>
   );
 }
