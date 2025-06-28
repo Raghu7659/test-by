@@ -9,6 +9,9 @@ import ThirdComponent from './propsContainer/ThirdComp';
 import FourthComponent from './propsContainer/FourComp';
 import StateManagement  from './propsContainer/StateMgm';
 import ClickEvent from './propsContainer/ClickEvent';
+import Resize from './propsContainer/Chat';
+import FormExample from './propsContainer/Formexample';
+
 let a ="Apple"
 let b = "Banana"
 const user ={
@@ -30,6 +33,8 @@ function App() {
       <StateManagement />
   
       <ClickEvent />
+      <Resize />
+      <FormExample />
     </div>
   );
 }
