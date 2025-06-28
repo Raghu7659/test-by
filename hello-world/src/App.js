@@ -10,6 +10,7 @@ function App() {
     <div className = "container">
       <p>I like {a}, {b}</p>
       <h2>This is Raghu</h2>
+     <button onClick={() => alert("Hello, World!")}>Click Me!</button>
       <img src="https://images.pexels.com/photos/674010/pexels-photo-674010.jpeg" alt="Raghu" />
     </div>
   );
