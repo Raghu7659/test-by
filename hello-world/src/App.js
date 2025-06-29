@@ -2,37 +2,42 @@
 
 
 import React from 'react';
-import './App.css'
+import './App.css';
 import FirstComponent from './propsContainer/FirstComp';
 import SecComponent from './propsContainer/SecComp';
 import ThirdComponent from './propsContainer/ThirdComp';
 import FourthComponent from './propsContainer/FourComp';
-import StateManagement  from './propsContainer/StateMgm';
-import ClickEvent from './propsContainer/ClickEvent';
+import StateManagement from './propsContainer/StateMgm';
 import Resize from './propsContainer/Chat';
 import FormExample from './propsContainer/Formexample';
-import SampleArrayComponent from './propsContainer/Samplearray';
-let a ="Apple"
-let b = "Banana"
-const user ={
+//import SampleArrayComponent from './propsContainer/Samplearray';
+
+
+let a = "Apple";
+let b = "Banana";
+
+const user = {
   name: "Raghu",
   age: 24,
-  city: "Hyderabad"
-}
+  city: "Hyderabad",
+  title: "Engineer"
+};
+
 function App() {
   return (
-    <div className = "container">
+    <div className="container">
       <p>I like {a}, {b}</p>
       <h2>This is Raghu</h2>
-     <button onClick={() => alert("Hello, World!")}>Click Me!</button>
-      <img src="https://images.pexels.com/photos/674010/pexels-photo-674010.jpeg" alt="Raghu" />
-      <FirstComponent name={user.name} />
+      <button onClick={() => alert("Hello, World!")}>Click Me!</button>
+      
+      <FirstComponent name={user.name} age={user.age} city={user.city} />
+      <FirstComponent name="John" age={30} city="New York" />
+      
       <SecComponent message={user.title} />
       <ThirdComponent title={user.title} />
       <FourthComponent title={user.title} />
+      
       <StateManagement />
-  
-      <ClickEvent />
       <Resize />
       <FormExample />
       <SampleArrayComponent />
@@ -41,9 +46,4 @@ function App() {
 }
 
 export default App;
-
-
-
-  
-
-
+// Note: Ensure that the components FirstComponent, SecComponent, ThirdComponent, FourthComponent, StateManagement, Resize, FormExample, and SampleArrayComponent are correctly defined in their respective files in the propsContainer directory.

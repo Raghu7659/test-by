@@ -1,17 +1,26 @@
  import React from "react";
+ 
+import MyComponent from './MyComponent';
+
+function myFunction() {
+  return "Hello, World!";
+}
+
  import { useState } from "react";
 const ClickEvent = () => {
   const [number, setNumber] = useState(0);
 const increment = () => {
   setNumber(number + 1);
-  const decrement = () => {
-    if (number > 1) {
-      setNumber(number - 1);
+};
 
-    }
-  };
-  const reset = () => {
-    setNumber(0);
+const decrement = () => {
+  if (number > 1) {
+    setNumber(number - 1);
+  }
+};
+
+const reset = () => {
+  setNumber(0);
 };
 
 
